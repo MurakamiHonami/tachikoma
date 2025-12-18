@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-#API キーを設定
+#APIキーを設定
 client=genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 user_history={}
 
