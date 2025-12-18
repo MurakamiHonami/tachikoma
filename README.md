@@ -1,6 +1,8 @@
 # Pythonパッケージのインストール
 pip install chainlit google-generativeai python-dotenv
 
-## .envファイルにAPIキー設定
+# .envファイル作成
+GEMINI_API_KEYにAPIキーを設定
+PROMPTにプロンプトを入力
 
-### hainlit run main.py -w　で実行
+# hainlit run main.py -w　で実行
