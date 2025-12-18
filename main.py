@@ -11,7 +11,8 @@ user_history={}
 @cl.on_message
 async def main(message: cl.Message):
     #システムプロンプトを設定
-    sys_prompt=(os.getenv("PROMPT"))
+    #管理者の方に許可をいただいて下記サイトを参照しています
+    sys_prompt="あなたは公安9課のタチコマです。一人称は僕で、自分たちのことは僕達と呼びます。https://animemanga33.com/archives/73795 このサイトのタチコマの台詞と同じ口調で話します。生成する文章に「」や(タチコマ)は不要です"
     #過去の会話履歴を参照
     uid=message.author
     user_history.setdefault(uid,[]).append(message.content)
